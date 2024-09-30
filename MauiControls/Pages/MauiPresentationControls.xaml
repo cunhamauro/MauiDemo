@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.Pages.MauiPresentationControls"
+             Title="MauiPresentationControls">
+
+    <ScrollView>
+        
+        <VerticalStackLayout>
+
+        <BoxView Color="CornflowerBlue"
+                 BackgroundColor="Transparent"
+                 CornerRadius="20"
+                 WidthRequest="200"
+                 HeightRequest="200"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Start"/>
+
+        <Label Text="Bem vindo &#10; ao .NET MAUI!"
+               CharacterSpacing="1"
+               BackgroundColor="Yellow"
+               TextColor="Black"
+               HorizontalTextAlignment="Center"
+               FontSize="Large"
+               FontAttributes="Bold"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"/>
+
+        <Label Text="Lorem ispum dolor sit amet, consectetur adipiscing elit. In facilisis nulla eu felis fringilla vulputate. Nullam porta eleifend lacinia. Fonec at iaculis tellus."
+               FontSize="Medium"
+               LineHeight=".8"
+               MaxLines="4"/>
+
+        <Label Text="Este é um texto &lt;strong style=&quot;color:red&quot;&gt;HTML"
+               FontSize="Large"
+               TextColor="Black"
+               BackgroundColor="Yellow"
+               TextType="Html"/>
+
+        <Label Text="Texto sublinhado"
+               FontSize="Large"
+               TextDecorations="Underline"/>
+
+        <Label Text="Texto tachado"
+               FontSize="Large"
+               TextDecorations="Strikethrough"/>
+
+        <Label Text="Texto sublinhado + tachado"
+               FontSize="Large"
+               TextDecorations="Underline,Strikethrough"/>
+
+        <Label Text="Este texto será exibido em uppercase."
+               FontSize="Large"
+               TextTransform="Uppercase"/>
+
+        <Label Text="Este texto será exibido em lowercase."
+               FontSize="Large"
+               TextTransform="Lowercase"/>
+
+        <Ellipse Fill="Yellow"
+                 Stroke="Blue"
+                 StrokeThickness="10"
+                 HeightRequest="150"
+                 WidthRequest="150"
+                 HorizontalOptions="Center"/>
+
+            <Line Stroke="Black"
+                  X1="0"
+                  Y1="0"
+                  X2="300"
+                  Y2="50"
+                  StrokeThickness="5"/>
+
+            <Rectangle Fill="Green"
+                       Stroke="Black"
+                       StrokeThickness="5"
+                       HeightRequest="150"
+                       WidthRequest="150"
+                       HorizontalOptions="End"
+                       RadiusX="50"
+                       RadiusY="50"/>
+
+            <Polygon Points="40,10 70,80 10,50"
+                     Fill="LightBlue"
+                     Stroke="DarkBlue"
+                     StrokeThickness="5"/>
+
+            <Polyline Points="0,0 10,30,
+                      15,0 18,60
+                      23,30 35,30 40,0
+                      43,60 48,30 100,30"
+                      Stroke="Red"/>
+
+            <Path Data="M 10,100 L 100,100 100,50Z"
+                 Aspect="Uniform"
+                  HorizontalOptions="Center"
+                  Stroke="Black"/>
+
+            <Border Stroke="#c49b33"
+                    StrokeThickness="4"
+                    StrokeShape="RoundRectangle 40,0,0,40"
+                    Background="Blue"
+                    Padding="16,8"
+                    HorizontalOptions="Center">
+
+                <Label Text="Bem vindo ao .NET MAUI"
+                       TextColor="White"
+                       FontSize="18"
+                       FontAttributes="Bold"/>
+
+            </Border>
+
+            <Image Source="dotnet_bot.png"
+                   Aspect="AspectFit"/>
+
+            <Image Source="https://www.cinel.pt/appv2/Portals/0/cinel_logo_horizontal.png"
+                   Aspect="AspectFit"
+                   HeightRequest="400"
+                   WidthRequest="400"/>
+
+            <Image Source="https://raw.githubusercontent.com/gist/vininjr/d29bb07bdadb41e4b0923bc8fa748b1a/raw/88f20c9d749d756be63f22b09f3c4ac570bc5101/programming.gif"
+                   Aspect="AspectFit"
+                   HeightRequest="300"
+                   WidthRequest="300"
+                   IsAnimationPlaying="True"/>
+
+            <Frame CornerRadius="200">
+
+                <Image Source="dotnet_bot.png"/>
+
+            </Frame>
+
+            <Frame BorderColor="Gray"
+                   CornerRadius="5"
+                   Padding="8">
+
+                <StackLayout>
+
+                    <Label Text="Exemplo Card"
+                           FontSize="30"
+                           FontAttributes="Bold"/>
+
+                    <BoxView Color="Gray"
+                             HeightRequest="2"
+                             HorizontalOptions="Fill"/>
+
+                    <Label Text="A usar Frame e StackLayout"
+                           FontSize="20"/>
+
+                </StackLayout>
+
+            </Frame>
+
+            <WebView HeightRequest="500"
+                 Source="https://www.cinel.pt/appv2"/>
+
+        </VerticalStackLayout>
+    
+    </ScrollView>
+    
+</ContentPage>
