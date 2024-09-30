@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemo.FlexLayoutDemo"
+             Title="FlexLayoutDemo">
+
+    <FlexLayout Direction="Column"
+                JustifyContent="SpaceEvenly"
+                AlignItems="Center">
+
+        <Label Text="Exemplo de FlexLayout"
+               FontSize="Large"
+               TextColor="Red"/>
+
+        <Image Source="dotnet_bot.svg"/>
+
+        <Button Text="Botão sem função" FontSize="Large"/>
+
+        <Label Text="Mauro Cunha - 2024" FontSize="Large"/>
+
+    </FlexLayout>
+    
+</ContentPage>
+    
