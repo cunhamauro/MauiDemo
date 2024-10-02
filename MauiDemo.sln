@@ -7,7 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiDemo", "MauiDemo\MauiDe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiControls", "MauiControls\MauiControls.csproj", "{7839DBE1-9BE9-4773-A62E-9EE52090F2FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiDemoDataBinding", "MauiDemoDataBinding\MauiDemoDataBinding.csproj", "{2E6CD9E4-6343-497B-92FF-8F5BF5CB4AF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiDemoDataBinding", "MauiDemoDataBinding\MauiDemoDataBinding.csproj", "{2E6CD9E4-6343-497B-92FF-8F5BF5CB4AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiHangmanGame", "MauiHangmanGame\MauiHangmanGame.csproj", "{55793B0E-A1BA-4E9E-AD5A-9ECAF568A4E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiResources", "MauiResources\MauiResources.csproj", "{BD6867F7-F243-43FB-BDCE-6D1F0718C8D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,18 @@ Global
 		{2E6CD9E4-6343-497B-92FF-8F5BF5CB4AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E6CD9E4-6343-497B-92FF-8F5BF5CB4AF9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2E6CD9E4-6343-497B-92FF-8F5BF5CB4AF9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{55793B0E-A1BA-4E9E-AD5A-9ECAF568A4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55793B0E-A1BA-4E9E-AD5A-9ECAF568A4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55793B0E-A1BA-4E9E-AD5A-9ECAF568A4E3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{55793B0E-A1BA-4E9E-AD5A-9ECAF568A4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55793B0E-A1BA-4E9E-AD5A-9ECAF568A4E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55793B0E-A1BA-4E9E-AD5A-9ECAF568A4E3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BD6867F7-F243-43FB-BDCE-6D1F0718C8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6867F7-F243-43FB-BDCE-6D1F0718C8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6867F7-F243-43FB-BDCE-6D1F0718C8D2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BD6867F7-F243-43FB-BDCE-6D1F0718C8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6867F7-F243-43FB-BDCE-6D1F0718C8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6867F7-F243-43FB-BDCE-6D1F0718C8D2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

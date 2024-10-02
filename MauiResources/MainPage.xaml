@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiResources.MainPage">
+
+    <!--<ScrollView>
+        <VerticalStackLayout Spacing="20">
+            <Image Source="tenis.jpg" Aspect="AspectFit"/>
+            <Image Source="computer.png"/>
+            <Image Source="batman.gif" IsAnimationPlaying="True"/>
+            <Image Source="dotnet_bot.png" WidthRequest="100" HeightRequest="100"/>
+            <Image>
+                <Image.Source>
+                    <UriImageSource Uri="https://www.cinel.pt/appv2/Portals/0/cinel_logo_horizontal.png" CacheValidity="10:00:00:00"/>
+                </Image.Source>
+            </Image>
+        </VerticalStackLayout>
+    </ScrollView>-->
+
+    <!--<VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Black">-->
+        
+        <!--<Label Text="Using default font" FontSize="30"/>
+
+        <Label Text="Using Roboto font" FontFamily="Roboto" FontSize="30"/>
+
+        <Label Text="Different font properties in different platforms!" FontSize="{OnPlatform iOS=20, Android=15, WinUI=25}">
+
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="Android" Value="Roboto"/>
+                    <On Platform="iOS" Value="OpenSans"/>
+                    <On Platform="WinUI" Value="Roboto"/>
+                </OnPlatform>
+            </Label.FontFamily>
+            
+        </Label>
+
+    <Label Text="Using Robo (Roboto) font" FontFamily="Robo" FontSize="30"/>-->
+
+        <!--<Image>
+            <Image.Source>
+                <FontImageSource FontFamily="IconsFont"
+                                 Glyph="&#xE800;"
+                                 Size="40"/>
+            </Image.Source>
+        </Image>
+
+        <Image>
+            <Image.Source>
+                <FontImageSource
+                                 Glyph="&#xE801;"
+                                    FontFamily="{OnPlatform Android=IconsFont}"
+                                 Size="40"/>
+            </Image.Source>
+        </Image>
+
+        <Image Background="LightGray"
+               Source="{FontImage &#xF1AE;, FontFamily=IconsFont, Size=44}"/>
+
+    </VerticalStackLayout>-->
+
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+            <Image Source="{Binding Photo}" Aspect="Fill"/>
+
+            <VerticalStackLayout HorizontalOptions="Center">
+
+                <Label Text="{Binding FirstName}" FontSize="30"/>
+                <Label Text="{Binding LastName}" FontSize="30"/>
+                <Label Text="{Binding Age}" FontSize="30"/>
+
+            </VerticalStackLayout>
+
+        </StackLayout>
+
+</ContentPage>

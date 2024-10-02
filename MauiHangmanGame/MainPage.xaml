@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiHangmanGame.MainPage">
+
+    <Grid RowDefinitions=".6*,.4*" RowSpacing="20">
+        <VerticalStackLayout Spacing="10">
+            <Label
+             FontAttributes="Bold"
+             FontSize="30"
+             TextColor="Red"
+             HorizontalOptions="Center"
+             Text="{Binding GameStatus}" />
+            <Image HeightRequest="220" Source="{Binding CurrentImage}" />
+            <Label
+             FontSize="40"
+             HorizontalOptions="Center"
+             Text="{Binding Word}"
+             VerticalOptions="Center" />
+            <Label
+             FontSize="30"
+             FontAttributes="Bold"
+             HorizontalTextAlignment="Center"
+             BackgroundColor="White"
+             Text="{Binding Message}" />
+            <Button
+             HorizontalOptions="Center"
+             Text="Reset"
+             TextColor="White"
+             FontSize="Medium"
+             FontAttributes="Bold"
+             WidthRequest="100" 
+             BackgroundColor="Black"
+             Clicked="Reset_Clicked"/>
+        </VerticalStackLayout>
+
+        <FlexLayout
+         x:Name="LetrasContainer"
+         Grid.Row="1"
+         BindableLayout.ItemsSource="{Binding Letters}"
+         JustifyContent="SpaceEvenly"
+         Wrap="Wrap">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <Button
+                     Clicked="Button_Clicked"
+                     HeightRequest="50"
+                     Text="{Binding .}"
+                     FontAttributes="Bold"
+                     BackgroundColor="Black"
+                     WidthRequest="50" />
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </FlexLayout>
+
+    </Grid>
+
+</ContentPage>
