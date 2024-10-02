@@ -57,12 +57,27 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\facebook.svg" />
+	  <None Remove="Resources\Images\ic_card_giftcard.png" />
+	  <None Remove="Resources\Images\ic_exit_to_app.png" />
+	  <None Remove="Resources\Images\ic_history.png" />
+	  <None Remove="Resources\Images\ic_person.png" />
+	  <None Remove="Resources\Images\ic_shopping_cart.png" />
+	  <None Remove="Resources\Images\plus.svg" />
+	  <None Remove="Resources\Images\settings.svg" />
+	  <None Remove="Resources\Images\trash.svg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Pages\MauiCommandControls.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\MauiPresentationControls.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

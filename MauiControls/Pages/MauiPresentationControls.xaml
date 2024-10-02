@@ -31,13 +31,13 @@
                LineHeight=".8"
                MaxLines="4"/>
 
-        <Label Text="Este é um texto &lt;strong style=&quot;color:red&quot;&gt;HTML"
+            <Label Text="Este é um texto &lt;strong style=&quot;color:red&quot;&gt;HTML"
                FontSize="Large"
                TextColor="Black"
                BackgroundColor="Yellow"
-               TextType="Html"/>
+                   TextType="Html"/>
 
-        <Label Text="Texto sublinhado"
+            <Label Text="Texto sublinhado"
                FontSize="Large"
                TextDecorations="Underline"/>
 

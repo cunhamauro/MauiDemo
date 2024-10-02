@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.Pages.MauiCommandControls"
+             Title="MauiCommandControls">
+    
+    <VerticalStackLayout>
+
+        <Button Text="Click to rotate the text!"
+                BackgroundColor="Green"
+                x:Name="btnDemo"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="btnDemo_Clicked"/>
+
+        <Label x:Name="lblDemo"
+            Text=".NET MAUI"
+            TextColor="Blue"
+            FontSize="25"
+            FontAttributes="Bold"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+        <Button Text="Click to rotate the text!"
+                BackgroundColor="Green"
+                ImageSource="ic_person.png"
+                x:Name="btnDemo2"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                IsEnabled="False"
+                Clicked="btnDemo_Clicked"/>
+
+        <ImageButton Source="dotnet_bot.svg"
+                     x:Name="btnImgDemo"
+                     Aspect="AspectFit"
+                     BorderColor="Black"
+                     Clicked="btnImgDemo_Clicked"
+                     HeightRequest="100"
+                     WidthRequest="100"
+                     HorizontalOptions="Center"
+                     VerticalOptions="Center"/>
+
+        <StackLayout Padding="20" RadioButtonGroup.GroupName="Pets2">
+
+            <Label Text="What is your favourite animal?"
+                   FontSize="Large" TextColor="Blue"/>
+            
+            <RadioButton Content="Cat" Value="Cat" CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Content="Dog" Value="Dog" CheckedChanged="RadioButton_CheckedChanged"/>
+            <RadioButton Content="Chicken" Value="Chicken" CheckedChanged="RadioButton_CheckedChanged"/>
+            <Label x:Name="lblPets2" Text=""/>
+
+        </StackLayout>
+
+        <StackLayout>
+            <SearchBar Placeholder="Search..."
+                       BackgroundColor="Cyan"
+                       SearchButtonPressed="SearchBar_SearchButtonPressed"/>
+        </StackLayout>
+
+        <SwipeView BackgroundColor="LightCyan">
+
+            <SwipeView.LeftItems>
+
+                <SwipeItems>
+
+                    <SwipeItem
+                        BackgroundColor="LightGreen"
+                        IconImageSource="ic_shopping_cart.png"
+                        Invoked="SwipeItem_Invoked"
+                        Text="Cat"/>
+
+                    <SwipeItem BackgroundColor="LightPink"
+                        IconImageSource="ic_history.png"
+                        Invoked="SwipeItem_Invoked"
+                        Text="Chicken"/>
+
+                </SwipeItems>
+                
+            </SwipeView.LeftItems>
+            
+            <SwipeView.RightItems>
+
+                <SwipeItem BackgroundColor="LemonChiffon"
+                           IconImageSource="ic_person.png"
+                           Invoked="SwipeItem_Invoked"
+                           Text="Dog"/>
+
+            </SwipeView.RightItems>
+
+            <Grid BackgroundColor="LightGray"
+                  HeightRequest="60"
+                  WidthRequest="300">
+
+                <Label HorizontalOptions="Center"
+                       Text="&lt;&lt;&lt; Swipe >>>"
+                       FontSize="Large"
+                       VerticalOptions="Center"/>
+
+            </Grid>
+            
+        </SwipeView>
+
+    </VerticalStackLayout>
+    
+</ContentPage>
